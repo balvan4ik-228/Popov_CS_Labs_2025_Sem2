@@ -1,0 +1,6 @@
+/home/klownada/Popov_CS_Labs_2025_Sem2/build/CMakeFiles/lab1.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/build/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/build/CMakeFiles/rebuild_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/build/mymath/CMakeFiles/mymath.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/build/mymath/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/build/mymath/CMakeFiles/rebuild_cache.dir
