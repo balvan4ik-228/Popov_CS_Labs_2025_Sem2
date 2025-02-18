@@ -1,0 +1,6 @@
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles/lab2.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles/rebuild_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/Planet/CMakeFiles/Planet.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/Planet/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/Planet/CMakeFiles/rebuild_cache.dir
