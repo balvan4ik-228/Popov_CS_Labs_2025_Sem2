@@ -1,0 +1,2 @@
+/usr/bin/ar qc libAirTicket.a CMakeFiles/AirTicket.dir/Bus.cpp.o
+/usr/bin/ranlib libAirTicket.a

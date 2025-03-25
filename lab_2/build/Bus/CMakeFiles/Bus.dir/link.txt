@@ -1,0 +1,2 @@
+/usr/bin/ar qc libBus.a CMakeFiles/Bus.dir/Bus.cpp.o
+/usr/bin/ranlib libBus.a
