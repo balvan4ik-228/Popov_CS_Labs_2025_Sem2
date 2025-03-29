@@ -1,15 +1,15 @@
 cmake_minimum_required(VERSION 3.23)
 
-set(project "Planet")
+set(project "Subscriber")
 project(${project})
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 set(${project}_SOURCES
-        Planet.cpp)
+        Subscriber.cpp)
 
 set(${project}_HEADERS
-        Planet.h)
+        Subscriber.h)
 
 set(${project}_SOURCE_LIST
         ${${project}_SOURCES}
