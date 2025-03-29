@@ -65,15 +65,18 @@ CMAKE_BINARY_DIR = /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build
 # The main recursive "all" target.
 all: CMakeFiles/lab2.dir/all
 all: Planet/all
+all: Subscriber/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: Planet/preinstall
+preinstall: Subscriber/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/lab2.dir/clean
 clean: Planet/clean
+clean: Subscriber/clean
 .PHONY : clean
 
 #=============================================================================
@@ -92,18 +95,34 @@ Planet/clean: Planet/CMakeFiles/Planet.dir/clean
 .PHONY : Planet/clean
 
 #=============================================================================
+# Directory level rules for directory Subscriber
+
+# Recursive "all" directory target.
+Subscriber/all: Subscriber/CMakeFiles/Subscriber.dir/all
+.PHONY : Subscriber/all
+
+# Recursive "preinstall" directory target.
+Subscriber/preinstall:
+.PHONY : Subscriber/preinstall
+
+# Recursive "clean" directory target.
+Subscriber/clean: Subscriber/CMakeFiles/Subscriber.dir/clean
+.PHONY : Subscriber/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/lab2.dir
 
 # All Build rule for target.
 CMakeFiles/lab2.dir/all: Planet/CMakeFiles/Planet.dir/all
+CMakeFiles/lab2.dir/all: Subscriber/CMakeFiles/Subscriber.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles --progress-num=3,4 "Built target lab2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles --progress-num=5,6 "Built target lab2"
 .PHONY : CMakeFiles/lab2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles 0
 .PHONY : CMakeFiles/lab2.dir/rule
@@ -142,6 +161,32 @@ Planet: Planet/CMakeFiles/Planet.dir/rule
 Planet/CMakeFiles/Planet.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Planet/CMakeFiles/Planet.dir/build.make Planet/CMakeFiles/Planet.dir/clean
 .PHONY : Planet/CMakeFiles/Planet.dir/clean
+
+#=============================================================================
+# Target rules for target Subscriber/CMakeFiles/Subscriber.dir
+
+# All Build rule for target.
+Subscriber/CMakeFiles/Subscriber.dir/all:
+	$(MAKE) $(MAKESILENT) -f Subscriber/CMakeFiles/Subscriber.dir/build.make Subscriber/CMakeFiles/Subscriber.dir/depend
+	$(MAKE) $(MAKESILENT) -f Subscriber/CMakeFiles/Subscriber.dir/build.make Subscriber/CMakeFiles/Subscriber.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles --progress-num=3,4 "Built target Subscriber"
+.PHONY : Subscriber/CMakeFiles/Subscriber.dir/all
+
+# Build rule for subdir invocation for target.
+Subscriber/CMakeFiles/Subscriber.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Subscriber/CMakeFiles/Subscriber.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles 0
+.PHONY : Subscriber/CMakeFiles/Subscriber.dir/rule
+
+# Convenience name for target.
+Subscriber: Subscriber/CMakeFiles/Subscriber.dir/rule
+.PHONY : Subscriber
+
+# clean rule for target.
+Subscriber/CMakeFiles/Subscriber.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Subscriber/CMakeFiles/Subscriber.dir/build.make Subscriber/CMakeFiles/Subscriber.dir/clean
+.PHONY : Subscriber/CMakeFiles/Subscriber.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

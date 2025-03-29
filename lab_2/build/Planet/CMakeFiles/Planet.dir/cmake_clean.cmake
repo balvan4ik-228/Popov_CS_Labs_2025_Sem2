@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Planet.dir/planet.cpp.o"
-  "CMakeFiles/Planet.dir/planet.cpp.o.d"
+  "CMakeFiles/Planet.dir/Planet.cpp.o"
+  "CMakeFiles/Planet.dir/Planet.cpp.o.d"
   "libPlanet.a"
   "libPlanet.pdb"
 )

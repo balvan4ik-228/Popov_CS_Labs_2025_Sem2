@@ -69,28 +69,28 @@ include Planet/CMakeFiles/Planet.dir/progress.make
 # Include the compile flags for this target's objects.
 include Planet/CMakeFiles/Planet.dir/flags.make
 
-Planet/CMakeFiles/Planet.dir/planet.cpp.o: Planet/CMakeFiles/Planet.dir/flags.make
-Planet/CMakeFiles/Planet.dir/planet.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Planet/planet.cpp
-Planet/CMakeFiles/Planet.dir/planet.cpp.o: Planet/CMakeFiles/Planet.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Planet/CMakeFiles/Planet.dir/planet.cpp.o"
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/Planet && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Planet/CMakeFiles/Planet.dir/planet.cpp.o -MF CMakeFiles/Planet.dir/planet.cpp.o.d -o CMakeFiles/Planet.dir/planet.cpp.o -c /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Planet/planet.cpp
+Planet/CMakeFiles/Planet.dir/Planet.cpp.o: Planet/CMakeFiles/Planet.dir/flags.make
+Planet/CMakeFiles/Planet.dir/Planet.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Planet/Planet.cpp
+Planet/CMakeFiles/Planet.dir/Planet.cpp.o: Planet/CMakeFiles/Planet.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Planet/CMakeFiles/Planet.dir/Planet.cpp.o"
+	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/Planet && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Planet/CMakeFiles/Planet.dir/Planet.cpp.o -MF CMakeFiles/Planet.dir/Planet.cpp.o.d -o CMakeFiles/Planet.dir/Planet.cpp.o -c /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Planet/Planet.cpp
 
-Planet/CMakeFiles/Planet.dir/planet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Planet.dir/planet.cpp.i"
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/Planet && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Planet/planet.cpp > CMakeFiles/Planet.dir/planet.cpp.i
+Planet/CMakeFiles/Planet.dir/Planet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Planet.dir/Planet.cpp.i"
+	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/Planet && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Planet/Planet.cpp > CMakeFiles/Planet.dir/Planet.cpp.i
 
-Planet/CMakeFiles/Planet.dir/planet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Planet.dir/planet.cpp.s"
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/Planet && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Planet/planet.cpp -o CMakeFiles/Planet.dir/planet.cpp.s
+Planet/CMakeFiles/Planet.dir/Planet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Planet.dir/Planet.cpp.s"
+	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/Planet && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Planet/Planet.cpp -o CMakeFiles/Planet.dir/Planet.cpp.s
 
 # Object files for target Planet
 Planet_OBJECTS = \
-"CMakeFiles/Planet.dir/planet.cpp.o"
+"CMakeFiles/Planet.dir/Planet.cpp.o"
 
 # External object files for target Planet
 Planet_EXTERNAL_OBJECTS =
 
-Planet/libPlanet.a: Planet/CMakeFiles/Planet.dir/planet.cpp.o
+Planet/libPlanet.a: Planet/CMakeFiles/Planet.dir/Planet.cpp.o
 Planet/libPlanet.a: Planet/CMakeFiles/Planet.dir/build.make
 Planet/libPlanet.a: Planet/CMakeFiles/Planet.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libPlanet.a"

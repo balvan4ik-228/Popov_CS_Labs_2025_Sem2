@@ -142,6 +142,19 @@ Planet/fast:
 	$(MAKE) $(MAKESILENT) -f Planet/CMakeFiles/Planet.dir/build.make Planet/CMakeFiles/Planet.dir/build
 .PHONY : Planet/fast
 
+#=============================================================================
+# Target rules for targets named Subscriber
+
+# Build rule for target.
+Subscriber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Subscriber
+.PHONY : Subscriber
+
+# fast build rule for target.
+Subscriber/fast:
+	$(MAKE) $(MAKESILENT) -f Subscriber/CMakeFiles/Subscriber.dir/build.make Subscriber/CMakeFiles/Subscriber.dir/build
+.PHONY : Subscriber/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -175,6 +188,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Planet"
+	@echo "... Subscriber"
 	@echo "... lab2"
 	@echo "... main.o"
 	@echo "... main.i"

@@ -1,7 +1,7 @@
 CMakeFiles/lab2.dir/main.cpp.o: \
  /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/main.cpp \
  /usr/include/stdc-predef.h \
- /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Planet/planet.h \
+ /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Subscriber/Subscriber.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -150,13 +150,7 @@ CMakeFiles/lab2.dir/main.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/iomanip \
- /usr/include/c++/13/locale \
- /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
- /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
- /usr/include/c++/13/bits/locale_facets_nonio.tcc \
- /usr/include/c++/13/bits/locale_conv.h \
- /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/sstream \
- /usr/include/c++/13/bits/sstream.tcc
+ /usr/include/c++/13/bits/istream.tcc \
+ /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Planet/Planet.h \
+ /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/13/limits

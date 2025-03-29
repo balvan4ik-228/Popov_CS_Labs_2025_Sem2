@@ -1,0 +1,9 @@
+        Mercury            4878               0     Нет
+        Neptune           49600               2     Нет
+         Uranus           51108               5     Нет
+        Jupiter          142796              16     Нет
+         Saturn          120000              17     Нет
+          Venus           12104               0       Да
+          Pluto            2280               1       Да
+          Earth           12774               1       Да
+           Mars            6786               2       Да

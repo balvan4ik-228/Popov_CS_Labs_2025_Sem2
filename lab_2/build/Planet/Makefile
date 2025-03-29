@@ -130,29 +130,29 @@ Planet/fast:
 	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build && $(MAKE) $(MAKESILENT) -f Planet/CMakeFiles/Planet.dir/build.make Planet/CMakeFiles/Planet.dir/build
 .PHONY : Planet/fast
 
-planet.o: planet.cpp.o
-.PHONY : planet.o
+Planet.o: Planet.cpp.o
+.PHONY : Planet.o
 
 # target to build an object file
-planet.cpp.o:
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build && $(MAKE) $(MAKESILENT) -f Planet/CMakeFiles/Planet.dir/build.make Planet/CMakeFiles/Planet.dir/planet.cpp.o
-.PHONY : planet.cpp.o
+Planet.cpp.o:
+	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build && $(MAKE) $(MAKESILENT) -f Planet/CMakeFiles/Planet.dir/build.make Planet/CMakeFiles/Planet.dir/Planet.cpp.o
+.PHONY : Planet.cpp.o
 
-planet.i: planet.cpp.i
-.PHONY : planet.i
+Planet.i: Planet.cpp.i
+.PHONY : Planet.i
 
 # target to preprocess a source file
-planet.cpp.i:
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build && $(MAKE) $(MAKESILENT) -f Planet/CMakeFiles/Planet.dir/build.make Planet/CMakeFiles/Planet.dir/planet.cpp.i
-.PHONY : planet.cpp.i
+Planet.cpp.i:
+	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build && $(MAKE) $(MAKESILENT) -f Planet/CMakeFiles/Planet.dir/build.make Planet/CMakeFiles/Planet.dir/Planet.cpp.i
+.PHONY : Planet.cpp.i
 
-planet.s: planet.cpp.s
-.PHONY : planet.s
+Planet.s: Planet.cpp.s
+.PHONY : Planet.s
 
 # target to generate assembly for a file
-planet.cpp.s:
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build && $(MAKE) $(MAKESILENT) -f Planet/CMakeFiles/Planet.dir/build.make Planet/CMakeFiles/Planet.dir/planet.cpp.s
-.PHONY : planet.cpp.s
+Planet.cpp.s:
+	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build && $(MAKE) $(MAKESILENT) -f Planet/CMakeFiles/Planet.dir/build.make Planet/CMakeFiles/Planet.dir/Planet.cpp.s
+.PHONY : Planet.cpp.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Planet"
-	@echo "... planet.o"
-	@echo "... planet.i"
-	@echo "... planet.s"
+	@echo "... Planet.o"
+	@echo "... Planet.i"
+	@echo "... Planet.s"
 .PHONY : help
 
 

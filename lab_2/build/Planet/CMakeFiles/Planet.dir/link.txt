@@ -1,2 +1,2 @@
-/usr/bin/ar qc libPlanet.a CMakeFiles/Planet.dir/planet.cpp.o
+/usr/bin/ar qc libPlanet.a CMakeFiles/Planet.dir/Planet.cpp.o
 /usr/bin/ranlib libPlanet.a

@@ -9,6 +9,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/CMakeLists.txt"
   "/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Planet/CMakeLists.txt"
+  "/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Subscriber/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
@@ -42,10 +43,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "Planet/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Subscriber/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/lab2.dir/DependInfo.cmake"
   "Planet/CMakeFiles/Planet.dir/DependInfo.cmake"
+  "Subscriber/CMakeFiles/Subscriber.dir/DependInfo.cmake"
   )

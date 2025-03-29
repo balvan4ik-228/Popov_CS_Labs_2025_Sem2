@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+Abonent_BINARY_DIR:STATIC=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/Abonent
+
+//Value Computed by CMake
+Abonent_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Abonent_SOURCE_DIR:STATIC=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Abonent
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -225,6 +234,15 @@ Planet_IS_TOP_LEVEL:STATIC=OFF
 Planet_SOURCE_DIR:STATIC=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Planet
 
 //Value Computed by CMake
+Subscriber_BINARY_DIR:STATIC=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build/Subscriber
+
+//Value Computed by CMake
+Subscriber_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Subscriber_SOURCE_DIR:STATIC=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/Subscriber
+
+//Value Computed by CMake
 lab2_BINARY_DIR:STATIC=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_2/build
 
 //Value Computed by CMake
@@ -338,7 +356,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

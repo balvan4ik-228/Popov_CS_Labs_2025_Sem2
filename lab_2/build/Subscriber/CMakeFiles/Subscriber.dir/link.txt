@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSubscriber.a CMakeFiles/Subscriber.dir/Subscriber.cpp.o
+/usr/bin/ranlib libSubscriber.a

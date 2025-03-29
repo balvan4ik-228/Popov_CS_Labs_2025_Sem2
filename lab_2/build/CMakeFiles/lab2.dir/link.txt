@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/lab2.dir/main.cpp.o -o lab2  Planet/libPlanet.a 
+/usr/bin/c++ CMakeFiles/lab2.dir/main.cpp.o -o lab2  Planet/libPlanet.a Subscriber/libSubscriber.a 
