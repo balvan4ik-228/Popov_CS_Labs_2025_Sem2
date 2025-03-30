@@ -228,9 +228,9 @@ void Subscriber::displaySubscribers(const Subscriber* subscribers, int size) {
 
     for(int i = 0; i < size; ++i) {
         std::cout <<std::left
-                  << std::setw(23) << subscribers[i].name
+                  << std::setw(15) << subscribers[i].name
                   << std::setw(15) << subscribers[i].age
-                  << std::setw(15) << subscribers[i].balance
+                  << std::setw(17) << subscribers[i].balance
                   << std::setw(10) << (subscribers[i].tariff == DEFAULT ? "Default" : "Super")
                   << "\n";
     }
