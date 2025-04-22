@@ -1,0 +1,6 @@
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_4/build/CMakeFiles/lab4.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_4/build/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_4/build/CMakeFiles/rebuild_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_4/build/MyStack/CMakeFiles/MyStack.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_4/build/MyStack/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_4/build/MyStack/CMakeFiles/rebuild_cache.dir
