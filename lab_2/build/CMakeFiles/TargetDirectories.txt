@@ -1,9 +1,0 @@
-/home/oem/labs/Andreev-Sem02/lab2/build/CMakeFiles/lab2.dir
-/home/oem/labs/Andreev-Sem02/lab2/build/CMakeFiles/edit_cache.dir
-/home/oem/labs/Andreev-Sem02/lab2/build/CMakeFiles/rebuild_cache.dir
-/home/oem/labs/Andreev-Sem02/lab2/build/Planet/CMakeFiles/Planet.dir
-/home/oem/labs/Andreev-Sem02/lab2/build/Planet/CMakeFiles/edit_cache.dir
-/home/oem/labs/Andreev-Sem02/lab2/build/Planet/CMakeFiles/rebuild_cache.dir
-/home/oem/labs/Andreev-Sem02/lab2/build/Bus/CMakeFiles/Bus.dir
-/home/oem/labs/Andreev-Sem02/lab2/build/Bus/CMakeFiles/edit_cache.dir
-/home/oem/labs/Andreev-Sem02/lab2/build/Bus/CMakeFiles/rebuild_cache.dir
