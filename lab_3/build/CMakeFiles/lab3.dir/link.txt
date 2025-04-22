@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/lab3.dir/main.cpp.o -o lab3  fraction/libfraction.a 

@@ -1,6 +1,0 @@
-/home/klownada/Popov_CS_Labs_2025_Sem2/lab_3/build/CMakeFiles/lab3.dir
-/home/klownada/Popov_CS_Labs_2025_Sem2/lab_3/build/CMakeFiles/edit_cache.dir
-/home/klownada/Popov_CS_Labs_2025_Sem2/lab_3/build/CMakeFiles/rebuild_cache.dir
-/home/klownada/Popov_CS_Labs_2025_Sem2/lab_3/build/fraction/CMakeFiles/fraction.dir
-/home/klownada/Popov_CS_Labs_2025_Sem2/lab_3/build/fraction/CMakeFiles/edit_cache.dir
-/home/klownada/Popov_CS_Labs_2025_Sem2/lab_3/build/fraction/CMakeFiles/rebuild_cache.dir
