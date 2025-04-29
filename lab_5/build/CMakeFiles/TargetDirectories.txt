@@ -1,0 +1,9 @@
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles/lab5.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles/rebuild_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/MySet/CMakeFiles/MySet.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/MySet/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/MySet/CMakeFiles/rebuild_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/MyVector/CMakeFiles/MyVector.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/MyVector/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/MyVector/CMakeFiles/rebuild_cache.dir
