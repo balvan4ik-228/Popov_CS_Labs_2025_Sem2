@@ -1,0 +1,9 @@
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/build/CMakeFiles/lab6.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/build/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/build/CMakeFiles/rebuild_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/build/Polynomial/CMakeFiles/Polynomial.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/build/Polynomial/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/build/Polynomial/CMakeFiles/rebuild_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/build/Term/CMakeFiles/Term.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/build/Term/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/build/Term/CMakeFiles/rebuild_cache.dir
