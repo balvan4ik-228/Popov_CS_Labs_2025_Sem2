@@ -1,81 +1,38 @@
 #include <iostream>
-#include <cstring>
 #include "MySet/MySet.h"
 
-template<typename T>
-void print_set(const MySet<T>& set) {
-    std::cout << "{ ";
-    for (size_t i = 0; i < set.size(); ++i)
-        std::cout << set[i] << " ";
-    std::cout << "}\n";
-}
-
-template<>
-void print_set<char*>(const MySet<char*>& set) {
-    std::cout << "{ ";
-    for (size_t i = 0; i < set.size(); ++i) {
-        if (set[i] != nullptr)
-            std::cout << set[i] << " ";
-        else
-            std::cout << "(null) ";
-    }
-    std::cout << "}\n";
-}
-
 int main() {
-    MySet<int> a, b;
-    a.add_element(1);
-    a.add_element(4);
-    a.add_element(5);
-    a.add_element(6);
+    MySet<int> A;
+    A.add_element(10);
+    A.add_element(20);
+    A.add_element(30);
 
-    b.add_element(1);
-    b.add_element(2);
-    b.add_element(3);
-    b.add_element(4);
+    MySet<int> B;
+    B.add_element(20);
+    B.add_element(40);
+    B.add_element(50);
 
-    std::cout << "A: "; print_set(a);
-    std::cout << "B: "; print_set(b);
+    std::cout << "Множество A: " << A << std::endl;
+    std::cout << "Множество B: " << B << std::endl;
+    std::cout << "Объединение (A + B): " << A + B << std::endl;
+    std::cout << "Пересечение (A * B): " << A * B << std::endl;
+    std::cout << "Разность (A - B): " << A - B << std::endl;
 
-    auto c = a + b;
-    std::cout << "A + B: "; print_set(c);
+    MySet<char*> C;
+    C.add_element("яблоко");
+    C.add_element("банан");
+    C.add_element("апельсин");
 
-    auto d = a * b;
-    std::cout << "A * B: "; print_set(d);
+    MySet<char*> D;
+    D.add_element("банан");
+    D.add_element("виноград");
+    D.add_element("апельсин");
 
-    auto e = a - b;
-    std::cout << "A - B: "; print_set(e);
-
-    MySet<char*> sa, sb;
-
-    sa.add_element(strdup("apple"));
-    sa.add_element(strdup("orange"));
-    sa.add_element(strdup("banana"));
-    sa.add_element(strdup("apple"));
-
-    sb.add_element(strdup("banana"));
-    sb.add_element(strdup("kiwi"));
-    sb.add_element(strdup("orange"));
-
-    std::cout << "\n";
-
-    std::cout << "SA: "; print_set(sa);
-    std::cout << "SB: "; print_set(sb);
-
-    auto sc = sa + sb;
-    std::cout << "SA + SB: "; print_set(sc);
-
-    auto sd = sa * sb;
-    std::cout << "SA * SB: "; print_set(sd);
-
-    auto se = sa - sb;
-    std::cout << "SA - SB: "; print_set(se);
-
-    for (size_t i = 0; i < sa.size(); ++i) free(sa[i]);
-    for (size_t i = 0; i < sb.size(); ++i) free(sb[i]);
-    for (size_t i = 0; i < sc.size(); ++i) free(sc[i]);
-    for (size_t i = 0; i < sd.size(); ++i) free(sd[i]);
-    for (size_t i = 0; i < se.size(); ++i) free(se[i]);
+    std::cout << "\nМножество C: " << C << std::endl;
+    std::cout << "Множество D: " << D << std::endl;
+    std::cout << "Объединение (C + D): " << C + D << std::endl;
+    std::cout << "Пересечение (C * D): " << C * D << std::endl;
+    std::cout << "Разность (C - D): " << C - D << std::endl;
 
     return 0;
 }

@@ -1,20 +1,20 @@
 cmake_minimum_required(VERSION 3.23)
 
 set(project "MyVector")
-project(${project})
+project(${project} LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
-
-set(${project}_SOURCES
-        MyVector.cpp)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(${project}_HEADERS
-        MyVector.h)
+    MyVector.h
+    MyVector.cpp
+)
 
-set(${project}_SOURCE_LIST
-        ${${project}_SOURCES}
-        ${${project}_HEADERS})
-
-add_library(${project}
-        STATIC
-        ${${project}_SOURCE_LIST})
+add_library(${project} INTERFACE)
+target_include_directories(${project} INTERFACE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+target_sources(${project} INTERFACE
+    ${${project}_HEADERS}
+)
