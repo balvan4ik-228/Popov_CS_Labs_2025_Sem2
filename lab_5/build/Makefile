@@ -129,31 +129,53 @@ lab5/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/build
 .PHONY : lab5/fast
 
-#=============================================================================
-# Target rules for targets named MySet
+MySet/MySet.o: MySet/MySet.cpp.o
+.PHONY : MySet/MySet.o
 
-# Build rule for target.
-MySet: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MySet
-.PHONY : MySet
+# target to build an object file
+MySet/MySet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/MySet/MySet.cpp.o
+.PHONY : MySet/MySet.cpp.o
 
-# fast build rule for target.
-MySet/fast:
-	$(MAKE) $(MAKESILENT) -f MySet/CMakeFiles/MySet.dir/build.make MySet/CMakeFiles/MySet.dir/build
-.PHONY : MySet/fast
+MySet/MySet.i: MySet/MySet.cpp.i
+.PHONY : MySet/MySet.i
 
-#=============================================================================
-# Target rules for targets named MyVector
+# target to preprocess a source file
+MySet/MySet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/MySet/MySet.cpp.i
+.PHONY : MySet/MySet.cpp.i
 
-# Build rule for target.
-MyVector: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyVector
-.PHONY : MyVector
+MySet/MySet.s: MySet/MySet.cpp.s
+.PHONY : MySet/MySet.s
 
-# fast build rule for target.
-MyVector/fast:
-	$(MAKE) $(MAKESILENT) -f MyVector/CMakeFiles/MyVector.dir/build.make MyVector/CMakeFiles/MyVector.dir/build
-.PHONY : MyVector/fast
+# target to generate assembly for a file
+MySet/MySet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/MySet/MySet.cpp.s
+.PHONY : MySet/MySet.cpp.s
+
+MyVector/MyVector.o: MyVector/MyVector.cpp.o
+.PHONY : MyVector/MyVector.o
+
+# target to build an object file
+MyVector/MyVector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/MyVector/MyVector.cpp.o
+.PHONY : MyVector/MyVector.cpp.o
+
+MyVector/MyVector.i: MyVector/MyVector.cpp.i
+.PHONY : MyVector/MyVector.i
+
+# target to preprocess a source file
+MyVector/MyVector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/MyVector/MyVector.cpp.i
+.PHONY : MyVector/MyVector.cpp.i
+
+MyVector/MyVector.s: MyVector/MyVector.cpp.s
+.PHONY : MyVector/MyVector.s
+
+# target to generate assembly for a file
+MyVector/MyVector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/MyVector/MyVector.cpp.s
+.PHONY : MyVector/MyVector.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -187,9 +209,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MySet"
-	@echo "... MyVector"
 	@echo "... lab5"
+	@echo "... MySet/MySet.o"
+	@echo "... MySet/MySet.i"
+	@echo "... MySet/MySet.s"
+	@echo "... MyVector/MyVector.o"
+	@echo "... MyVector/MyVector.i"
+	@echo "... MyVector/MyVector.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

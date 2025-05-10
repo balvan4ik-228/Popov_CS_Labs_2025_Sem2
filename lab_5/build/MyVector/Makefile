@@ -116,44 +116,6 @@ depend:
 	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-MyVector/CMakeFiles/MyVector.dir/rule:
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyVector/CMakeFiles/MyVector.dir/rule
-.PHONY : MyVector/CMakeFiles/MyVector.dir/rule
-
-# Convenience name for target.
-MyVector: MyVector/CMakeFiles/MyVector.dir/rule
-.PHONY : MyVector
-
-# fast build rule for target.
-MyVector/fast:
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build && $(MAKE) $(MAKESILENT) -f MyVector/CMakeFiles/MyVector.dir/build.make MyVector/CMakeFiles/MyVector.dir/build
-.PHONY : MyVector/fast
-
-MyVector.o: MyVector.cpp.o
-.PHONY : MyVector.o
-
-# target to build an object file
-MyVector.cpp.o:
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build && $(MAKE) $(MAKESILENT) -f MyVector/CMakeFiles/MyVector.dir/build.make MyVector/CMakeFiles/MyVector.dir/MyVector.cpp.o
-.PHONY : MyVector.cpp.o
-
-MyVector.i: MyVector.cpp.i
-.PHONY : MyVector.i
-
-# target to preprocess a source file
-MyVector.cpp.i:
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build && $(MAKE) $(MAKESILENT) -f MyVector/CMakeFiles/MyVector.dir/build.make MyVector/CMakeFiles/MyVector.dir/MyVector.cpp.i
-.PHONY : MyVector.cpp.i
-
-MyVector.s: MyVector.cpp.s
-.PHONY : MyVector.s
-
-# target to generate assembly for a file
-MyVector.cpp.s:
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build && $(MAKE) $(MAKESILENT) -f MyVector/CMakeFiles/MyVector.dir/build.make MyVector/CMakeFiles/MyVector.dir/MyVector.cpp.s
-.PHONY : MyVector.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,10 +124,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MyVector"
-	@echo "... MyVector.o"
-	@echo "... MyVector.i"
-	@echo "... MyVector.s"
 .PHONY : help
 
 

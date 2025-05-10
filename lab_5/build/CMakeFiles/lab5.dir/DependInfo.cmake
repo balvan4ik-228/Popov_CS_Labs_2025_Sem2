@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MySet/MySet.cpp" "CMakeFiles/lab5.dir/MySet/MySet.cpp.o" "gcc" "CMakeFiles/lab5.dir/MySet/MySet.cpp.o.d"
+  "/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MyVector/MyVector.cpp" "CMakeFiles/lab5.dir/MyVector/MyVector.cpp.o" "gcc" "CMakeFiles/lab5.dir/MyVector/MyVector.cpp.o.d"
   "/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/main.cpp" "CMakeFiles/lab5.dir/main.cpp.o" "gcc" "CMakeFiles/lab5.dir/main.cpp.o.d"
   )
 

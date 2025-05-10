@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/MySet/cmake_install.cmake")
+  include("/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/MyVector/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/MyVector/cmake_install.cmake")
+  include("/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/MySet/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

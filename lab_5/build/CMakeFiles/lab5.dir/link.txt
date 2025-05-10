@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/lab5.dir/main.cpp.o -o lab5  MySet/libMySet.a MyVector/libMyVector.a 
+/usr/bin/c++ CMakeFiles/lab5.dir/main.cpp.o CMakeFiles/lab5.dir/MySet/MySet.cpp.o CMakeFiles/lab5.dir/MyVector/MyVector.cpp.o -o lab5 

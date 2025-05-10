@@ -64,26 +64,26 @@ CMAKE_BINARY_DIR = /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build
 
 # The main recursive "all" target.
 all: CMakeFiles/lab5.dir/all
-all: MySet/all
 all: MyVector/all
+all: MySet/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: MySet/preinstall
 preinstall: MyVector/preinstall
+preinstall: MySet/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/lab5.dir/clean
-clean: MySet/clean
 clean: MyVector/clean
+clean: MySet/clean
 .PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory MySet
 
 # Recursive "all" directory target.
-MySet/all: MySet/CMakeFiles/MySet.dir/all
+MySet/all:
 .PHONY : MySet/all
 
 # Recursive "preinstall" directory target.
@@ -91,14 +91,14 @@ MySet/preinstall:
 .PHONY : MySet/preinstall
 
 # Recursive "clean" directory target.
-MySet/clean: MySet/CMakeFiles/MySet.dir/clean
+MySet/clean:
 .PHONY : MySet/clean
 
 #=============================================================================
 # Directory level rules for directory MyVector
 
 # Recursive "all" directory target.
-MyVector/all: MyVector/CMakeFiles/MyVector.dir/all
+MyVector/all:
 .PHONY : MyVector/all
 
 # Recursive "preinstall" directory target.
@@ -106,23 +106,22 @@ MyVector/preinstall:
 .PHONY : MyVector/preinstall
 
 # Recursive "clean" directory target.
-MyVector/clean: MyVector/CMakeFiles/MyVector.dir/clean
+MyVector/clean:
 .PHONY : MyVector/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/lab5.dir
 
 # All Build rule for target.
-CMakeFiles/lab5.dir/all: MySet/CMakeFiles/MySet.dir/all
-CMakeFiles/lab5.dir/all: MyVector/CMakeFiles/MyVector.dir/all
+CMakeFiles/lab5.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles --progress-num=5,6 "Built target lab5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles --progress-num=1,2,3,4 "Built target lab5"
 .PHONY : CMakeFiles/lab5.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles 0
 .PHONY : CMakeFiles/lab5.dir/rule
@@ -135,58 +134,6 @@ lab5: CMakeFiles/lab5.dir/rule
 CMakeFiles/lab5.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/clean
 .PHONY : CMakeFiles/lab5.dir/clean
-
-#=============================================================================
-# Target rules for target MySet/CMakeFiles/MySet.dir
-
-# All Build rule for target.
-MySet/CMakeFiles/MySet.dir/all:
-	$(MAKE) $(MAKESILENT) -f MySet/CMakeFiles/MySet.dir/build.make MySet/CMakeFiles/MySet.dir/depend
-	$(MAKE) $(MAKESILENT) -f MySet/CMakeFiles/MySet.dir/build.make MySet/CMakeFiles/MySet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles --progress-num=1,2 "Built target MySet"
-.PHONY : MySet/CMakeFiles/MySet.dir/all
-
-# Build rule for subdir invocation for target.
-MySet/CMakeFiles/MySet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MySet/CMakeFiles/MySet.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles 0
-.PHONY : MySet/CMakeFiles/MySet.dir/rule
-
-# Convenience name for target.
-MySet: MySet/CMakeFiles/MySet.dir/rule
-.PHONY : MySet
-
-# clean rule for target.
-MySet/CMakeFiles/MySet.dir/clean:
-	$(MAKE) $(MAKESILENT) -f MySet/CMakeFiles/MySet.dir/build.make MySet/CMakeFiles/MySet.dir/clean
-.PHONY : MySet/CMakeFiles/MySet.dir/clean
-
-#=============================================================================
-# Target rules for target MyVector/CMakeFiles/MyVector.dir
-
-# All Build rule for target.
-MyVector/CMakeFiles/MyVector.dir/all:
-	$(MAKE) $(MAKESILENT) -f MyVector/CMakeFiles/MyVector.dir/build.make MyVector/CMakeFiles/MyVector.dir/depend
-	$(MAKE) $(MAKESILENT) -f MyVector/CMakeFiles/MyVector.dir/build.make MyVector/CMakeFiles/MyVector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles --progress-num=3,4 "Built target MyVector"
-.PHONY : MyVector/CMakeFiles/MyVector.dir/all
-
-# Build rule for subdir invocation for target.
-MyVector/CMakeFiles/MyVector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyVector/CMakeFiles/MyVector.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build/CMakeFiles 0
-.PHONY : MyVector/CMakeFiles/MyVector.dir/rule
-
-# Convenience name for target.
-MyVector: MyVector/CMakeFiles/MyVector.dir/rule
-.PHONY : MyVector
-
-# clean rule for target.
-MyVector/CMakeFiles/MyVector.dir/clean:
-	$(MAKE) $(MAKESILENT) -f MyVector/CMakeFiles/MyVector.dir/build.make MyVector/CMakeFiles/MyVector.dir/clean
-.PHONY : MyVector/CMakeFiles/MyVector.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

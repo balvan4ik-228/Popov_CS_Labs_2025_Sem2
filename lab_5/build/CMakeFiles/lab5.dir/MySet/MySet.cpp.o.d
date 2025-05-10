@@ -1,7 +1,9 @@
-CMakeFiles/lab5.dir/main.cpp.o: \
- /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
- /usr/include/c++/13/bits/requires_hosted.h \
+CMakeFiles/lab5.dir/MySet/MySet.cpp.o: \
+ /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MySet/MySet.cpp \
+ /usr/include/stdc-predef.h \
+ /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MySet/MySet.h \
+ /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MySet/../MyVector/MyVector.h \
+ /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -149,7 +151,5 @@ CMakeFiles/lab5.dir/main.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
- /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MySet/MySet.h \
- /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MySet/../MyVector/MyVector.h \
- /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h
+ /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/cstring \
+ /usr/include/string.h /usr/include/strings.h

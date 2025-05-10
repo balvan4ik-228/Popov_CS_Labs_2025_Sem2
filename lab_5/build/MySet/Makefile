@@ -116,44 +116,6 @@ depend:
 	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-MySet/CMakeFiles/MySet.dir/rule:
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MySet/CMakeFiles/MySet.dir/rule
-.PHONY : MySet/CMakeFiles/MySet.dir/rule
-
-# Convenience name for target.
-MySet: MySet/CMakeFiles/MySet.dir/rule
-.PHONY : MySet
-
-# fast build rule for target.
-MySet/fast:
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build && $(MAKE) $(MAKESILENT) -f MySet/CMakeFiles/MySet.dir/build.make MySet/CMakeFiles/MySet.dir/build
-.PHONY : MySet/fast
-
-MySet.o: MySet.cpp.o
-.PHONY : MySet.o
-
-# target to build an object file
-MySet.cpp.o:
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build && $(MAKE) $(MAKESILENT) -f MySet/CMakeFiles/MySet.dir/build.make MySet/CMakeFiles/MySet.dir/MySet.cpp.o
-.PHONY : MySet.cpp.o
-
-MySet.i: MySet.cpp.i
-.PHONY : MySet.i
-
-# target to preprocess a source file
-MySet.cpp.i:
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build && $(MAKE) $(MAKESILENT) -f MySet/CMakeFiles/MySet.dir/build.make MySet/CMakeFiles/MySet.dir/MySet.cpp.i
-.PHONY : MySet.cpp.i
-
-MySet.s: MySet.cpp.s
-.PHONY : MySet.s
-
-# target to generate assembly for a file
-MySet.cpp.s:
-	cd /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/build && $(MAKE) $(MAKESILENT) -f MySet/CMakeFiles/MySet.dir/build.make MySet/CMakeFiles/MySet.dir/MySet.cpp.s
-.PHONY : MySet.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,10 +124,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MySet"
-	@echo "... MySet.o"
-	@echo "... MySet.i"
-	@echo "... MySet.s"
 .PHONY : help
 
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MySet -I/home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MyVector
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++17
 
