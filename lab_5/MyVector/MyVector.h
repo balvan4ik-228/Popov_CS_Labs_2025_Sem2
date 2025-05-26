@@ -6,6 +6,18 @@
 #include <stdexcept>
 
 template <typename T>
+struct CompareTraits {
+    static bool equals(const T& a, const T& b) { return a == b; }
+    static bool less(const T& a, const T& b) { return a < b; }
+};
+
+template <>
+struct CompareTraits<char*> {
+    static bool equals(const char* a, const char* b) { return strcmp(a, b) == 0; }
+    static bool less(const char* a, const char* b) { return strcmp(a, b) < 0; }
+};
+
+template <typename T>
 class MyVector {
 protected:
     size_t max_size;
@@ -23,7 +35,7 @@ protected:
     void bubbleSort() {
         for (size_t i = 0; i < size-1; ++i)
             for (size_t j = 0; j < size-i-1; ++j)
-                if (pdata[j] > pdata[j+1])
+                if (CompareTraits<T>::less(pdata[j+1], pdata[j]))
                     std::swap(pdata[j], pdata[j+1]);
     }
 
@@ -62,7 +74,7 @@ public:
 
     int find(const T& element) const {
         for (size_t i = 0; i < size; ++i)
-            if (pdata[i] == element) return i;
+            if (CompareTraits<T>::equals(pdata[i], element)) return i;
         return -1;
     }
 
@@ -192,4 +204,5 @@ public:
 template class MyVector<int>;
 template class MyVector<double>;
 template class MyVector<char*>;
-#endif
+
+#endif // MYVECTOR_H
