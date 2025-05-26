@@ -151,5 +151,5 @@ CMakeFiles/lab5.dir/main.cpp.o: \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
  /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MySet/MySet.h \
- /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MySet/../MyVector/MyVector.h \
+ /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MyVector/MyVector.h \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h

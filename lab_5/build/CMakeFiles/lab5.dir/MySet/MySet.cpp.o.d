@@ -2,7 +2,7 @@ CMakeFiles/lab5.dir/MySet/MySet.cpp.o: \
  /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MySet/MySet.cpp \
  /usr/include/stdc-predef.h \
  /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MySet/MySet.h \
- /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MySet/../MyVector/MyVector.h \
+ /home/klownada/Popov_CS_Labs_2025_Sem2/lab_5/MyVector/MyVector.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
