@@ -5,34 +5,34 @@
 
 class Polynomial {
 private:
-    Term* terms;
-    int capacity;
-    int size;
-    int degree;
-    bool order; // true — по убыванию, false — по возрастанию
+    Term* terms;      // Динамический массив термов
+    int capacity;     // Вместимость массива
+    int size;         // Текущий размер
+    int degree;       // Степень полинома
+    bool order;       // true — сортировка по убыванию степени
 
-    void resize();
-    void addTerm(const Term& t);
-    void insertTerm(const Term& t);
-    void removeTerm(int index);
-    void updateDegree();
+    void resize();          // Увеличение размера массива
+    void addTerm(const Term& t); // Добавление терма
+    void insertTerm(const Term& t); // Вставка с сортировкой
+    void removeTerm(int index);    // Удаление терма
+    void updateDegree();           // Обновление степени полинома
 
 public:
-    Polynomial();
-    Polynomial(int constant);
-    Polynomial(const Term& t);
-    Polynomial(const Polynomial& other);
+    Polynomial();                   // Конструктор по умолчанию (0)
+    Polynomial(int constant);       // Конструктор для константы
+    Polynomial(const Term& t);      // Конструктор из терма
+    Polynomial(const Polynomial& other); // Конструктор копирования
     ~Polynomial();
 
-    Polynomial& operator=(const Polynomial& other);
-    Polynomial& operator+=(const Term& t);
-    Polynomial& operator+=(const Polynomial& other);
+    Polynomial& operator=(const Polynomial& other); // Присваивание
+    Polynomial& operator+=(const Term& t);          // Добавление терма
+    Polynomial& operator+=(const Polynomial& other); // Сложение полиномов
 
-    friend Polynomial operator+(const Polynomial& p1, const Polynomial& p2);
-    friend Polynomial operator*(const Polynomial& p1, const Polynomial& p2);
+    friend Polynomial operator+(const Polynomial& p1, const Polynomial& p2); // Сложение
+    friend Polynomial operator*(const Polynomial& p1, const Polynomial& p2); // Умножение
 
-    friend std::ostream& operator<<(std::ostream& os, const Polynomial& p);
-    friend std::istream& operator>>(std::istream& is, Polynomial& p);
+    friend std::ostream& operator<<(std::ostream& os, const Polynomial& p); // Вывод
+    friend std::istream& operator>>(std::istream& is, Polynomial& p);       // Ввод
 };
 
 #endif // POLYNOMIAL_H

@@ -16,7 +16,8 @@ Polynomial::Polynomial(const Term& t) : capacity(10), size(1), degree(t.getExp()
     terms[0] = t;
 }
 
-Polynomial::Polynomial(const Polynomial& other) : capacity(other.capacity), size(other.size), degree(other.degree), order(other.order) {
+Polynomial::Polynomial(const Polynomial& other)
+    : capacity(other.capacity), size(other.size), degree(other.degree), order(other.order) {
     terms = new Term[capacity];
     for (int i = 0; i < size; ++i) {
         terms[i] = other.terms[i];
@@ -55,6 +56,7 @@ void Polynomial::resize() {
 void Polynomial::addTerm(const Term& t) {
     if (t.getCoeff() == 0) return;
 
+    // Поиск терма с такой же степенью
     for (int i = 0; i < size; ++i) {
         if (terms[i].getExp() == t.getExp()) {
             terms[i] = terms[i] + t;
@@ -66,6 +68,7 @@ void Polynomial::addTerm(const Term& t) {
         }
     }
 
+    // Если терм не найден, вставляем новый
     insertTerm(t);
     updateDegree();
 }
@@ -74,7 +77,8 @@ void Polynomial::insertTerm(const Term& t) {
     if (size == capacity) resize();
 
     int pos = 0;
-    while (pos < size && ((order && terms[pos].getExp() > t.getExp()) || (!order && terms[pos].getExp() < t.getExp()))) {
+    while (pos < size && ((order && terms[pos].getExp() > t.getExp()) ||
+           (!order && terms[pos].getExp() < t.getExp()))) {
         pos++;
     }
 
@@ -94,8 +98,12 @@ void Polynomial::removeTerm(int index) {
 }
 
 void Polynomial::updateDegree() {
-    degree = 0;
-    for (int i = 0; i < size; ++i) {
+    if (size == 0) {
+        degree = 0;
+        return;
+    }
+    degree = terms[0].getExp(); // Для порядка по убыванию
+    for (int i = 1; i < size; ++i) {
         if (terms[i].getExp() > degree) {
             degree = terms[i].getExp();
         }
@@ -140,44 +148,46 @@ std::ostream& operator<<(std::ostream& os, const Polynomial& p) {
 
     bool first = true;
     for (int i = 0; i < p.size; ++i) {
-        Term t = p.terms[i];
+        const Term& t = p.terms[i];
         if (t.getCoeff() == 0) continue;
 
-        if (!first) {
-            os << (t.getCoeff() > 0 ? " + " : " - ");
-            if (t.getCoeff() > 0) {
-                os << Term(t.getCoeff(), t.getExp());
-            } else {
-                os << Term(-t.getCoeff(), t.getExp());
-            }
-        } else {
+        if (first) {
             os << t;
             first = false;
+        } else {
+            if (t.getCoeff() > 0) os << " + ";
+            else os << " - ";
+            // Выводим модуль коэффициента и степень
+            Term temp(std::abs(t.getCoeff()), t.getExp());
+            os << temp;
         }
     }
-
     return os;
 }
 
+
 std::istream& operator>>(std::istream& is, Polynomial& p) {
+    p = Polynomial(); // Очистить перед вводом!
     std::string line;
     std::getline(is, line);
 
-    line.erase(std::remove(line.begin(), line.end(), ' '), line.end());
-
     if (line.empty()) {
-        p = Polynomial();
         return is;
     }
 
-    if (line[0] != '+' && line[0] != '-') {
-        line = '+' + line;
+    size_t pos = line.find_first_not_of(" \t");
+    if (pos != std::string::npos && line[pos] != '+' && line[pos] != '-') {
+        line.insert(pos, "+");
     }
 
     size_t start = 0;
     while (start < line.size()) {
+        start = line.find_first_not_of(" \t", start);
+        if (start == std::string::npos) break;
+
         size_t end = line.find_first_of("+-", start + 1);
         if (end == std::string::npos) end = line.size();
+
         std::string token = line.substr(start, end - start);
         start = end;
 

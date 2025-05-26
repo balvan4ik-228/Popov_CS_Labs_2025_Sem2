@@ -21,6 +21,9 @@ public:
 
     int getCoeff() const;
     int getExp() const;
+
+    // Проверка на валидность степени (опционально)
+    bool isValid() const;
 };
 
 #endif // TERM_H
