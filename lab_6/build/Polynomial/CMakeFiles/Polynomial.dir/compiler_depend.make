@@ -7,10 +7,8 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/c++/13/algorithm \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
-  /usr/include/c++/13/bits/algorithmfwd.h \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/basic_ios.h \
@@ -52,21 +50,17 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
   /usr/include/c++/13/bits/requires_hosted.h \
   /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
-  /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_function.h \
-  /usr/include/c++/13/bits/stl_heap.h \
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
   /usr/include/c++/13/bits/stl_pair.h \
-  /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
-  /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
@@ -93,8 +87,6 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
   /usr/include/c++/13/istream \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
@@ -235,6 +227,8 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
@@ -277,17 +271,7 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
+/usr/include/c++/13/bits/string_view.tcc:
 
 /usr/include/c++/13/bits/stl_construct.h:
 
@@ -309,6 +293,10 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
 
 /usr/include/c++/13/bits/invoke.h:
 
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/usr/include/c++/13/bits/locale_facets.tcc:
+
 /usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/c++/13/bits/allocator.h:
@@ -319,19 +307,9 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
 
 /usr/include/ctype.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
 
-/usr/include/c++/13/bits/char_traits.h:
-
-/usr/include/c++/13/bits/ostream.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
-
-/usr/include/c++/13/bits/ios_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/c++/13/bits/basic_ios.h:
+/usr/include/c++/13/bits/basic_ios.tcc:
 
 /usr/include/c++/13/bits/nested_exception.h:
 
@@ -339,37 +317,47 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
 
 /usr/include/wchar.h:
 
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/c++/13/bits/basic_ios.h:
+
+/usr/include/c++/13/bits/ostream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
+
+/usr/include/c++/13/bits/ios_base.h:
+
 /usr/include/c++/13/bits/move.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/c++/13/type_traits:
 
-/usr/include/c++/13/bits/locale_facets.tcc:
-
-/usr/include/c++/13/bits/requires_hosted.h:
-
-/usr/include/c++/13/bits/string_view.tcc:
-
 /usr/include/c++/13/backward/binders.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+/usr/include/c++/13/bits/stringfwd.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/include/c++/13/bits/ptr_traits.h:
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/c++/13/streambuf:
+
+/usr/include/c++/13/bits/exception.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/include/alloca.h:
 
 /usr/include/c++/13/bit:
 
 /usr/include/c++/13/bits/basic_string.tcc:
 
-/usr/include/alloca.h:
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/13/bits/hash_bytes.h:
+/usr/include/c++/13/bits/char_traits.h:
 
 /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/Polynomial/Polynomial.h:
 
@@ -395,19 +383,21 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
 
 /usr/include/c++/13/bits/exception_ptr.h:
 
-/usr/include/c++/13/bits/concept_check.h:
+/usr/include/c++/13/ios:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
-/usr/include/c++/13/bits/algorithmfwd.h:
-
-/usr/include/c++/13/ios:
-
-/usr/include/c++/13/bits/stl_heap.h:
-
-/usr/include/c++/13/ext/alloc_traits.h:
-
-/usr/include/c++/13/new:
+/usr/include/c++/13/bits/concept_check.h:
 
 /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/Polynomial/Polynomial.cpp:
 
@@ -429,37 +419,15 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
 /usr/include/c++/13/bits/functexcept.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/13/bits/stl_iterator.h:
 
 /usr/include/c++/13/string:
 
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/c++/13/streambuf:
-
-/usr/include/c++/13/bits/exception.h:
-
-/usr/include/c++/13/algorithm:
-
 /usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/bits/uniform_int_dist.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/locale.h:
 
 /usr/include/c++/13/bits/std_abs.h:
 
@@ -467,17 +435,11 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
 
 /usr/include/c++/13/bits/uses_allocator.h:
 
-/usr/include/wctype.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
 
-/usr/include/x86_64-linux-gnu/bits/errno.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/c++/13/exception:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/c++/13/bits/new_allocator.h:
-
-/usr/include/c++/13/bits/uses_allocator_args.h:
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/c++/13/bits/stl_function.h:
 
@@ -492,8 +454,6 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
 /usr/include/c++/13/clocale:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/c++/13/bits/stl_algo.h:
 
 /usr/include/c++/13/cstddef:
 
@@ -537,19 +497,13 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
 
 /usr/include/features-time64.h:
 
+/usr/include/c++/13/ext/alloc_traits.h:
+
+/usr/include/c++/13/new:
+
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
 /usr/include/c++/13/ostream:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/c++/13/pstl/execution_defs.h:
-
-/usr/include/c++/13/pstl/glue_algorithm_defs.h:
-
-/usr/include/sched.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -573,7 +527,13 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
 
 /usr/include/linux/errno.h:
 
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/locale.h:
+
 /usr/include/pthread.h:
+
+/usr/include/sched.h:
 
 /usr/include/stdlib.h:
 
@@ -585,6 +545,12 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/c++/13/bits/uses_allocator_args.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
@@ -593,6 +559,16 @@ Polynomial/CMakeFiles/Polynomial.dir/Polynomial.cpp.o: /home/klownada/Popov_CS_L
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
+/usr/include/wctype.h:
+
+/usr/include/c++/13/exception:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:

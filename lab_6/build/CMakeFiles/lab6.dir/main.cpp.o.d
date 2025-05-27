@@ -1,7 +1,8 @@
 CMakeFiles/lab6.dir/main.cpp.o: \
  /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/main.cpp \
  /usr/include/stdc-predef.h \
- /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/Term/Term.h \
+ /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/Polynomial/Polynomial.h \
+ /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/Polynomial/../Term/Term.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -150,6 +151,6 @@ CMakeFiles/lab6.dir/main.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
- /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/Polynomial/Polynomial.h \
- /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/Polynomial/../Term/Term.h
+ /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/sstream \
+ /usr/include/c++/13/bits/sstream.tcc /usr/include/c++/13/cstring \
+ /usr/include/string.h /usr/include/strings.h

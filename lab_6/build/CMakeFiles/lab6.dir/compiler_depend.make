@@ -4,7 +4,6 @@
 CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/main.cpp \
   /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/Term/Term.h \
   /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/Polynomial/Polynomial.h \
-  /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/Term/Term.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -49,6 +48,7 @@ CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/mai
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_construct.h \
@@ -70,6 +70,7 @@ CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/mai
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/cstring \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
@@ -88,6 +89,7 @@ CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/mai
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
@@ -108,6 +110,8 @@ CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/mai
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
@@ -256,19 +260,29 @@ CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/mai
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
 /usr/include/c++/13/bits/string_view.tcc:
 
 /usr/include/c++/13/bits/stl_construct.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
+
+/usr/include/c++/13/cstdlib:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
@@ -291,6 +305,8 @@ CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/mai
 /usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/c++/13/bits/allocator.h:
+
+/usr/include/c++/13/sstream:
 
 /usr/include/c++/13/bits/locale_classes.h:
 
@@ -325,6 +341,8 @@ CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/mai
 /usr/include/c++/13/backward/binders.h:
 
 /usr/include/c++/13/bits/stringfwd.h:
+
+/usr/include/c++/13/bits/sstream.tcc:
 
 /usr/include/c++/13/cwctype:
 
@@ -366,6 +384,10 @@ CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/mai
 
 /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/Term/Term.h:
 
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/strings.h:
+
 /usr/include/stdc-predef.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
@@ -375,8 +397,6 @@ CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/mai
 /usr/include/c++/13/bits/ptr_traits.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/c++/13/bits/localefwd.h:
 
@@ -450,7 +470,7 @@ CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/mai
 
 /usr/include/c++/13/cstdio:
 
-/usr/include/c++/13/cstdlib:
+/usr/include/c++/13/cstring:
 
 /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/main.cpp:
 
@@ -526,6 +546,12 @@ CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/mai
 
 /usr/include/stdlib.h:
 
+/usr/include/string.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
@@ -539,10 +565,6 @@ CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/mai
 /usr/include/c++/13/bits/uses_allocator_args.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/c++/13/bits/basic_string.h:
 
@@ -559,11 +581,3 @@ CMakeFiles/lab6.dir/main.cpp.o: /home/klownada/Popov_CS_Labs_2025_Sem2/lab_6/mai
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
