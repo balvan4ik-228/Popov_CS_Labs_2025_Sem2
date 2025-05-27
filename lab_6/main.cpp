@@ -1,41 +1,35 @@
-#include "Term/Term.h"
 #include "Polynomial/Polynomial.h"
 #include <iostream>
+#include <sstream>
+#include <cstring>
 
 int main() {
-    // Ввод термов
-    Term t1, t2;
-    std::cout << "Введите первый терм (пример: -5x^3): ";
-    std::cin >> t1;
-    std::cout << "Введите второй терм: ";
-    std::cin >> t2;
+    Term t1(3, 2);
+    Term t2(-1, 2);
+    Term t3 = t1 + t2;
 
-    // Сложение термов
-    try {
-        Term sum = t1 + t2;
-        std::cout << "Сумма термов: " << sum << std::endl;
-    } catch (const std::invalid_argument& e) {
-        std::cerr << "Ошибка: " << e.what() << std::endl;
-    }
+    std::cout << "Term 1: " << t1 << std::endl;
+    std::cout << "Term 2: " << t2 << std::endl;
+    std::cout << "Term 1 + Term 2: " << t3 << std::endl;
 
-    // Ввод полиномов
-    Polynomial p1, p2;
-    std::cout << "\nВведите первый полином (пример: 3x^0 - 4x^1 + 1x^4 - 8 + 3x^2 + 5x^2): ";
-    std::cin.ignore(); // Очистка буфера
+    std::cout << "Введите полином 1: " << std::endl;
+    Polynomial p1;
     std::cin >> p1;
-    std::cout << "Нормализованный вид первого полинома: " << p1 << std::endl;
+    std::cout << "Полином 1: " << std::endl << p1 << std::endl;
 
-    std::cout << "Введите второй полином: ";
+    std::cout << "Введите полином 2: " << std::endl;
+    Polynomial p2;
     std::cin >> p2;
-    std::cout << "Нормализованный вид второго полинома: " << p2 << std::endl;
+    std::cout << "Полином 2: " << std::endl << p2 << std::endl;
 
-    // Сложение полиномов
-    Polynomial sum_poly = p1 + p2;
-    std::cout << "Сумма полиномов: " << sum_poly << std::endl;
+    Polynomial p3 = p1 + p2;
+    std::cout << "p3 = p1 + p2 = " << p3 << std::endl;
 
-    // Умножение полиномов
-    Polynomial product_poly = p1 * p2;
-    std::cout << "Произведение полиномов: " << product_poly << std::endl;
+    Polynomial p4 = p1 * p2;
+    std::cout << "p4 = p1 * p2 = " << p4 << std::endl;
+
+    Polynomial p5 = p1 - p2;
+    std::cout << "p5 = p1 - p2 = " << p5 << std::endl;
 
     return 0;
 }

@@ -1,93 +1,160 @@
 #include "Term.h"
-#include <sstream>
 #include <cctype>
+#include <sstream>
+#include <cstdlib>
 
-Term::Term() : coeff(0), exp(0) {}
-Term::Term(int c) : coeff(c), exp(0) {}
-Term::Term(int c, int e) : coeff(c), exp(e) {}
+// Вспомогательные функции для работы с C-строками
+int findChar(const char* str, char c) {
+    int i = 0;
+    while (str[i] != '\0') {
+        if (str[i] == c) return i;
+        i++;
+    }
+    return -1; // Символ не найден
+}
 
-// Сложение термов (разрешены любые степени)
+int TermStringLength(const char* str) {
+    int len = 0;
+    while (str[len] != '\0') len++;
+    return len;
+}
+
+char* substring(const char* str, int start, int length = -1) {
+    int strLen = TermStringLength(str);
+
+    if (start >= strLen) {
+        char* result = new char[1];
+        result[0] = '\0';
+        return result;
+    }
+
+    if (length == -1 || start + length > strLen) {
+        length = strLen - start;
+    }
+
+    char* result = new char[length + 1];
+    for (int i = 0; i < length; i++) {
+        result[i] = str[start + i];
+    }
+    result[length] = '\0';
+
+    return result;
+}
+
+Term::Term() : coefficient(0), exponent(0) {}
+
+Term::Term(int coef) : coefficient(coef), exponent(0) {}
+
+Term::Term(int coef, int exp) : coefficient(coef), exponent(exp) {}
+
+int Term::getCoefficient() const {
+    return coefficient;
+}
+
+int Term::getExponent() const {
+    return exponent;
+}
+
 Term operator+(const Term& t1, const Term& t2) {
-    if (t1.exp != t2.exp) {
-        throw std::invalid_argument("Степени термов должны совпадать!");
+    if (t1.exponent != t2.exponent) {
+        throw std::invalid_argument("Cannot add terms with different exponents");
     }
-    return Term(t1.coeff + t2.coeff, t1.exp);
+    return Term(t1.coefficient + t2.coefficient, t1.exponent);
 }
 
-// Вывод терма с отрицательными степенями
-std::ostream& operator<<(std::ostream& os, const Term& t) {
-    if (t.coeff == 0) {
-        os << "0";
-        return os;
+std::istream& operator>>(std::istream& is, Term& term) {
+    // Читаем ввод во временный буфер
+    char buffer[256];
+    is >> buffer;
+
+    // Создаем динамический массив точного размера
+    int bufferLen = TermStringLength(buffer);
+    char* input = new char[bufferLen + 1];
+    for (int i = 0; i <= bufferLen; i++) {
+        input[i] = buffer[i];
     }
 
-    // Коэффициент
-    if ((t.coeff != 1 && t.coeff != -1) || t.exp == 0) {
-        os << t.coeff;
-    } else if (t.coeff == -1) {
-        os << "-";
+    // Значения по умолчанию
+    int coefficient = 1;
+    int exponent = 0;
+
+    // Проверка на пустую строку
+    if (bufferLen == 0) {
+        term = Term(0, 0);
+        delete[] input;
+        return is;
     }
 
-    // Переменная и степень
-    if (t.exp != 0) {
-        os << "x";
-        if (t.exp != 1) {
-            os << "^" << t.exp; // Например: x^-2
+    // Проверка на наличие 'x'
+    int xPos = findChar(input, 'x');
+    if (xPos == -1) {
+        // Нет 'x', значит это просто число (коэффициент с нулевой степенью)
+        coefficient = atoi(input);
+        exponent = 0;
+    } else {
+        // Есть 'x', разбираем коэффициент
+        if (xPos == 0) {
+            // Если 'x' в начале, то коэффициент = 1
+            coefficient = 1;
+        } else if (xPos == 1 && input[0] == '-') {
+            // Если '-x', то коэффициент = -1
+            coefficient = -1;
+        } else {
+            // Иначе парсим коэффициент из подстроки до 'x'
+            char* coeffStr = substring(input, 0, xPos);
+            if (coeffStr[0] == '+' && coeffStr[1] == '\0') {
+                coefficient = 1;
+            } else if (coeffStr[0] == '-' && coeffStr[1] == '\0') {
+                coefficient = -1;
+            } else {
+                coefficient = atoi(coeffStr);
+            }
+            delete[] coeffStr;
         }
-    }
-    return os;
-}
 
-// Ввод термов с отрицательными степенями
-std::istream& operator>>(std::istream& is, Term& t) {
-    char sign = '+';
-    int coeff = 0, exp = 0;
-    char ch;
-
-    // Пропуск пробелов
-    while (is.get(ch) && std::isspace(ch)) {}
-
-    // Знак
-    if (ch == '+' || ch == '-') {
-        sign = ch;
-        if (std::isspace(is.peek())) {
-            coeff = (sign == '-' ? -1 : 1);
-            t = Term(coeff, 0);
+        // Разбираем показатель степени
+        if (xPos == bufferLen - 1) {
+            // Если 'x' в конце, то степень = 1
+            exponent = 1;
+        } else if (input[xPos + 1] == '^') {
+            // Если после 'x' идет '^', то парсим показатель
+            char* expStr = substring(input, xPos + 2);
+            exponent = atoi(expStr);
+            delete[] expStr;
+        } else {
+            // Ошибка формата
+            is.setstate(std::ios::failbit);
+            delete[] input;
             return is;
         }
-    } else {
-        is.putback(ch);
     }
 
-    // Коэффициент
-    if (std::isdigit(is.peek())) {
-        is >> coeff;
-    } else if (is.peek() == 'x') {
-        coeff = 1;
-    } else {
-        coeff = (sign == '-' ? -1 : 1);
-    }
-
-    coeff *= (sign == '-' ? -1 : 1);
-
-    // Степень
-    if (is.peek() == 'x') {
-        is.get();
-        exp = 1;
-        if (is.peek() == '^') {
-            is.get();
-            is >> exp; // Считывает отрицательные степени
-        }
-    }
-
-    t = Term(coeff, exp);
+    term = Term(coefficient, exponent);
+    delete[] input;
     return is;
 }
 
-int Term::getCoeff() const { return coeff; }
-int Term::getExp() const { return exp; }
 
-// Проверка на валидность (опционально)
-bool Term::isValid() const {
-    return true; // Разрешены любые степени
+
+std::ostream& operator<<(std::ostream& os, const Term& term) {
+    if (term.exponent == 0) {
+        os << term.coefficient;
+    } else if (term.exponent == 1) {
+        if (term.coefficient == 1) {
+            os << "x";
+        } else if (term.coefficient == -1) {
+            os << "-x";
+        } else {
+            os << term.coefficient << "x";
+        }
+    } else {
+        if (term.coefficient == 1) {
+            os << "x^" << term.exponent;
+        } else if (term.coefficient == -1) {
+            os << "-x^" << term.exponent;
+        } else {
+            os << term.coefficient << "x^" << term.exponent;
+        }
+    }
+    return os;
 }
