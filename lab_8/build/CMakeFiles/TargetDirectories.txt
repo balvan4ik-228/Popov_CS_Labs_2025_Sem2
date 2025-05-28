@@ -1,0 +1,6 @@
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_8/build/CMakeFiles/lab8.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_8/build/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_8/build/CMakeFiles/rebuild_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_8/build/Tasks/CMakeFiles/Tasks.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_8/build/Tasks/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_8/build/Tasks/CMakeFiles/rebuild_cache.dir

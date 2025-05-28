@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/lab8.dir/main.cpp.o -o lab8  Tasks/libTasks.a 
