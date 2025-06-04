@@ -1,0 +1,4 @@
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_7/build/CMakeFiles/lab7.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_7/build/CMakeFiles/clang-format.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_7/build/CMakeFiles/edit_cache.dir
+/home/klownada/Popov_CS_Labs_2025_Sem2/lab_7/build/CMakeFiles/rebuild_cache.dir
